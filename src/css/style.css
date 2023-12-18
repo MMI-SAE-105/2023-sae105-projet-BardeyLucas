@@ -1,0 +1,31 @@
+/*import police d'écriture*/
+@import url('../fonts/fonts.css');
+/*import css*/
+@import url('base/main.css');
+@import url('base/media.css');
+
+@import url('components/card-film.css');
+@import url('components/card-livre.css');
+@import url('components/card-projet.css');
+@import url('components/card-rando.css');
+@import url('components/card.css');
+@import url('components/section-information.css');
+
+@import url('layout/footer.css');
+@import url('layout/header.css');
+
+@import url('pages/a-propos.css');
+@import url('pages/accueil.css');
+@import url('pages/film.css');
+@import url('pages/list-film.css');
+@import url('pages/list-livre.css');
+@import url('pages/livre.css');
+@import url('pages/musique.css');
+@import url('pages/projet.css');
+@import url('pages/rando.css');
+@import url('pages/replique.css');
+@import url('pages/réalisateur.css');
+
+@import url('utils/variables.css');
+
+@import url('vendors/normalize.css');

@@ -1,0 +1,18 @@
+:root{
+
+    /* Color style */
+--Blanc: rgb(250,255,250);
+--Vert-claire: rgb(230,255,215);
+--Vert:  rgb(0,131,12);
+--Vert-AAA: rgb(0,97,9);
+--Vert-fonce: rgb(88,102,88);
+--Noir: rgb(0,21,0);
+
+    /* Text-size styles */
+
+    /* base size: basic-text (12px) */
+--Title: 1.5rem;
+--2Title: 1rem;
+--3title: 0.875rem;
+--texte: 0.75rem;
+}
