@@ -1,0 +1,14 @@
+.glossaire__titre, .form__titre{
+    text-align: center;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Vert-AAA)
+}
+.assos__titre{
+    text-align: center;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Vert)
+}
