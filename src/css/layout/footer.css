@@ -1,3 +1,6 @@
+.footer__glossaire{
+    background-color: var(--Vert-claire);
+}
 .glossaire__titre, .form__titre{
     text-align: center;
     font-family: Shrikhand;
@@ -5,10 +8,17 @@
     font-size: 16px;
     color: var(--Vert-AAA)
 }
+.footer__form{
+    background-color: var(--Vert-claire); 
+}
 .assos__titre{
     text-align: center;
     font-family: Shrikhand;
     font-weight: 400;
     font-size: 16px;
     color: var(--Vert)
+}
+.footer__bar{
+    background-color: var(--Vert);
+    color: var(--Blanc);
 }
