@@ -1,27 +1,30 @@
 .header{
-    display: flex;
+    padding-top: 20px;
     width: 100%;
-    height: 90px;
+    height: 60px;
     background-color: var(--Blanc);
     border-bottom: solid 1px var(--Vert-AAA);
     border-left: solid 1px var(--Vert-AAA);
     border-right: solid 1px var(--Vert-AAA);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
-    justify-content: space-between;
 }
-.logo{
-    background-color: var(--Vert);
-    align-self: center;
+.header__bar{
+    padding-left: 10px;
+    padding-right: 10px;
+    width: calc(100% - 20px);
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+.header__logo{
+    margin-top: 10px;
     width: 60px;
     height: 40px;
-    margin-left: 20px;
 }
-.menu{
-    background-color: var(--Vert);
+.header__title{
     align-self: center;
-    width: 40px;
-    height: 40px;
-    margin-left: 20px;
-    margin-right: 20px;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 24px;
 }
