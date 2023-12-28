@@ -49,6 +49,10 @@
     width: calc(100% - 82px);
     /* width: calc(100% - 42px); */
 }
+.menu__firstCase>a,
+.menu__secondCase>a{
+    text-decoration: none;
+}
 .menu__texte{
     margin: 0;
     padding-top: 50px;
