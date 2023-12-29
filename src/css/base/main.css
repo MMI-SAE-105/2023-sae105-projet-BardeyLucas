@@ -5,8 +5,42 @@ main{
 .article{
 
 }
-.article__intro{
-
+/*section*/
+.article__intro, 
+.article__synopsis,
+.article__trailer, 
+.article__production, 
+.article__musique,
+.article__fiche,
+.article__distinction,
+.article__conclusion,
+.article__redirect{
+    color:blue;
+}
+/*titre*/
+.synopsis__title,
+.trailer__title,
+.production__title,
+.musique__title,
+.fiche__title,
+.distinction__title,
+.conclusion__title,
+.redirect__title {
+    color:crimson;
+}
+/*textes*/
+.synopsis__text, 
+.production__text,
+.musique__text,
+.fiche__text,
+.distinction__text,
+.conclusion__text {
+    color: blueviolet;
+}
+/*background*/
+.synopsis__background,
+.fiche__background {
+    background-color: var(--Vert-claire);
 }
 .intro__title{
 
@@ -16,9 +50,6 @@ main{
 }
 .intro__citation{
     font-style: italic;
-}
-.intro__CoverImage{
-
 }
 .intro__informations{
 
@@ -44,11 +75,14 @@ main{
 .informations__supplement{
 
 }
-.supplement__legend>p{
+/*saut de ligne*/
+.supplement__legend>p,
+.fiche__text{
     display: flex;
     flex-direction: column;
     margin: 0;
 }
+.supplement__legend>p
 .supplement__lien{
 
 }
@@ -58,95 +92,7 @@ main{
 .intro__auteur {
 
 }
-.article__synopsis{
 
-}
-.synopsis__background{
-
-}
-.synopsis__title{
-
-}
-.synopsis__text{
-
-}
-.synopsis__image{
-
-}
-.article__trailer{
-
-}
-.trailer__title{
-
-}
-.trailer__video{
-
-}
-.trailer__videoLegend{
-
-}
-.article__production{
-
-}
-.production__title{
-
-}
-.production__texte{
-
-}
-.production__image{
-
-}
-.article__musique{
-
-}
-.musique__title{
-
-}
-.musique__text{
-
-}
-.article__fiche{
-
-}
-.fiche__background{
-
-}
-.fiche__title{
-
-}
-.fiche__text{
-    display: flex;
-    flex-direction: column;
-    margin: 0;
-}
-.article__distinction{
-
-}
-.distinction__title{
-
-}
-.distinction__text{
-
-}
-.distinction__image{
-
-}
-.article__conclusion{
-
-}
-.conclusion__title{
-
-}
-.conclusion__text{
-
-}
-.article__redirect{
-
-}
-.redirect__title{
-    
-}
 q::before {
     content: '"';
 }
