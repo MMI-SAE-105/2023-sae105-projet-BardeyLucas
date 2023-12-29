@@ -125,12 +125,14 @@
     justify-content: space-evenly;
     border-bottom: solid 1px var(--Blanc);
 }
-.bar__texteOn>p{
+.bar__texteOn>p, .bar__texteOn{
     margin: 0;
     line-height: 30px;
     font-family: Nunito;
     font-weight: regular;
     font-size: 12px;
+    color: var(--Blanc);
+    text-decoration: none;
 }
 .bar__texte{
     margin: 0;
@@ -141,5 +143,5 @@
     font-size: 12px;
 }
 .bar__texte>a{
-    text-decoration: underline;
+    color: var(--Blanc);
 }
