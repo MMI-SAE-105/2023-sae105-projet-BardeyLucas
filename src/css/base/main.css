@@ -46,7 +46,7 @@ main{
 }
 .supplement__legend>p{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 0;
 }
 .supplement__lien{
@@ -104,6 +104,47 @@ main{
 
 }
 .musique__text{
+
+}
+.article__fiche{
+
+}
+.fiche__background{
+
+}
+.fiche__title{
+
+}
+.fiche__text{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+.article__distinction{
+
+}
+.distinction__title{
+
+}
+.distinction__text{
+
+}
+.distinction__image{
+
+}
+.article__conclusion{
+
+}
+.conclusion__title{
+
+}
+.conclusion__text{
+
+}
+.article__redirect{
+
+}
+.redirect__title{
     
 }
 q::before {
