@@ -85,7 +85,7 @@ main{
 .trailer__videoLegend{
 
 }
-.section__production{
+.article__production{
 
 }
 .production__title{
@@ -95,6 +95,15 @@ main{
 
 }
 .production__image{
+
+}
+.article__musique{
+
+}
+.musique__title{
+
+}
+.musique__text{
     
 }
 q::before {
