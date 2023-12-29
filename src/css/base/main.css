@@ -73,6 +73,18 @@ main{
 .synopsis__image{
 
 }
+.article__trailer{
+
+}
+.trailer__title{
+
+}
+.trailer__video{
+
+}
+.trailer__videoLegend{
+    
+}
 q::before {
     content: '"';
 }
