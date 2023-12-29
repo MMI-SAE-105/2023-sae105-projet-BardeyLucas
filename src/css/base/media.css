@@ -1,18 +1,21 @@
-.intro__CoverImage {
-    
-}
-.synopsis__image {
-
+.intro__CoverImage{
+    width: 100%;
 }
 .trailer__video {
-
+    width: 100%;
 }
 .trailer__videoLegend {
 
 }
-.production__image {
-
+.production__image,.distinction__image{
+    padding: 0;
+    margin: 0;
 }
-.distinction__image {
-
+.production__image>img {
+    margin-left: 20px;
+    width: calc(100% - 40px);
+}
+.distinction__image>img {
+    margin-left: 20px;
+    width: calc(100% - 40px);
 }

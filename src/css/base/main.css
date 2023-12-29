@@ -16,6 +16,7 @@ main{
 .article__conclusion,
 .article__redirect{
     color:blue;
+    padding: 0 20px;
 }
 /*titre*/
 .synopsis__title,
