@@ -53,7 +53,25 @@ main{
 
 }
 .intro__citation{
-    
+
+}
+.intro__auteur {
+
+}
+.article__synopsis{
+
+}
+.synopsis__background{
+
+}
+.synopsis__title{
+
+}
+.synopsis__text{
+
+}
+.synopsis__image{
+
 }
 q::before {
     content: '"';
