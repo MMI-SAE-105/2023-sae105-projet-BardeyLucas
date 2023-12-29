@@ -1,5 +1,65 @@
 main{
     padding-top: 65px;
+    background-color: var(--Blanc);
+}
+.article{
+
+}
+.article__intro{
+
+}
+.intro__title{
+
+}
+.intro__accroche{
+
+}
+.intro__citation{
+    font-style: italic;
+}
+.intro__CoverImage{
+
+}
+.intro__informations{
+
+}
+.informations__fiche{
+
+}
+.fiche__title{
+
+}
+.fiche__table{
+
+}
+.table__line{
+    
+}
+.line__type{
+    font-weight: bold;
+}
+.line__rep {
+
+}
+.informations__supplement{
+
+}
+.supplement__legend>p{
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.supplement__lien{
+
+}
+.intro__citation{
+    
+}
+q::before {
+    content: '"';
+}
+q::after {
+    content: '"';
 }
 /* body{
     background-color: var(--Blanc);
