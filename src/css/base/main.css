@@ -5,17 +5,20 @@ main{
 .article{
 
 }
-/*section*/
-.article__synopsis,
+/*section classique*/
 .article__trailer, 
 .article__production, 
 .article__musique,
-.article__fiche,
 .article__distinction,
 .article__conclusion,
 .article__redirect{
     color:blue;
     padding: 0 20px;
+}
+/*section coloré*/
+.article__synopsis,
+.article__fiche{
+    color:indianred;
 }
 /*titre*/
 .synopsis__title,
@@ -26,7 +29,12 @@ main{
 .distinction__title,
 .conclusion__title,
 .redirect__title {
-    color:crimson;
+    margin: 10px 0;
+    line-height: 30px;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--Vert-AAA);
 }
 /*textes*/
 .synopsis__text, 
@@ -35,12 +43,21 @@ main{
 .fiche__text,
 .distinction__text,
 .conclusion__text {
-    color: blueviolet;
+    margin: 0;
+    margin-bottom: 10px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
 }
 /*background*/
 .synopsis__background,
 .fiche__background {
     background-color: var(--Vert-claire);
+    padding: 0 20px;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    
 }
 .article__intro{
 
@@ -56,12 +73,18 @@ main{
     margin-bottom: 0;
 }
 .intro__accroche{
+    text-align: center;
+    margin: 10px 0;
+    margin: 0;
     font-family: Nunito;
     font-weight: bold;
     font-size: 14px;
     color: var(--Noir);
 }
 .intro__citation{
+    margin: 0 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     font-style: italic;
     font-family: Nunito;
     font-size: 12px;
@@ -132,13 +155,22 @@ main{
     color: var(--Noir);
 }
 .intro__citation>blockquote{
-    margin: 20px;
+    margin: 20px 0;
     margin-bottom: 0;
 }
 .intro__auteur {
-    margin: 0 20px;
-}
 
+}
+.article__redirect{
+
+}
+.redirect__title{
+    text-align: center;
+    font-family: Nunito;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--Noir);
+}
 q::before {
     content: '"';
 }
