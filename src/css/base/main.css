@@ -6,7 +6,6 @@ main{
 
 }
 /*section*/
-.article__intro, 
 .article__synopsis,
 .article__trailer, 
 .article__production, 
@@ -43,14 +42,30 @@ main{
 .fiche__background {
     background-color: var(--Vert-claire);
 }
-.intro__title{
+.article__intro{
 
 }
+.intro__title{
+    line-height: 50px;
+    text-align: center;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Vert);
+    margin-top: 15px;
+    margin-bottom: 0;
+}
 .intro__accroche{
-
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--Noir);
 }
 .intro__citation{
     font-style: italic;
+    font-family: Nunito;
+    font-size: 12px;
+    color: var(--Noir);
 }
 .intro__informations{
 
