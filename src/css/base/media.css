@@ -51,3 +51,31 @@
     font-size: 12px;
     color: var(--Noir);
 }
+.resumeV__image {
+    margin: 0;
+}
+.resumeV__image>img {
+    width: 100%;
+}
+.resumeV__image>figcaption {
+    margin: 0 20px;
+    font-style: italic;
+    font-family: Nunito;
+    font-size: 12px;
+    color: var(--Noir);
+}
+.citation__image {
+    margin: 0;
+}
+
+.citation__image>img {
+    width: 100%;
+}
+
+.citation__image>figcaption {
+    margin: 0 20px;
+    font-style: italic;
+    font-family: Nunito;
+    font-size: 12px;
+    color: var(--Noir);
+}

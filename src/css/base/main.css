@@ -12,14 +12,18 @@ main{
 .article__distinction,
 .article__conclusion,
 .article__redirect,
-.article__resume{
+.article__resume,
+.article__Apropos,
+.article__plus{
     color:blue;
     padding: 0 20px;
 }
 /*section coloré*/
 .article__synopsis,
 .article__fiche,
-.article__creation{
+.article__creation,
+.article__resumeV,
+.article__citation{
     color:indianred;
 }
 /*titre*/
@@ -31,7 +35,11 @@ main{
 .conclusion__title,
 .redirect__title,
 .resume__title,
-.creation__title {
+.creation__title,
+.Apropos__title,
+.resumeV__title,
+.plus__title,
+.citation__title {
     margin: 10px 0;
     line-height: 30px;
     font-family: Nunito;
@@ -47,7 +55,11 @@ main{
 .distinction__text,
 .conclusion__text,
 .resume__text,
-.creation__text {
+.creation__text,
+.Apropos__text,
+.resumeV__text,
+.plus__text,
+.citation__text {
     margin: 0;
     margin-bottom: 10px;
     font-family: Nunito;
@@ -58,7 +70,9 @@ main{
 /*background*/
 .synopsis__background,
 .fiche__background,
-.creation__background {
+.creation__background,
+.resumeV__background,
+.citation__background {
     background-color: var(--Vert-claire);
     padding: 0 20px;
     padding-bottom: 10px;
@@ -150,7 +164,7 @@ main{
     width: 100px;
     height: 40px;
     background-color: var(--Blanc);
-    border: solid 1px var(--Noir);
+    border: solid 1px var(--Vert-fonce);
     border-radius: 5px;
 }
 .supplement__lien>p{
