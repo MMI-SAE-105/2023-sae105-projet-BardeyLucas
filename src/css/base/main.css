@@ -18,7 +18,8 @@ main{
 }
 /*section coloré*/
 .article__synopsis,
-.article__fiche{
+.article__fiche,
+.article__creation{
     color:indianred;
 }
 /*titre*/
@@ -29,7 +30,8 @@ main{
 .distinction__title,
 .conclusion__title,
 .redirect__title,
-.resume__title {
+.resume__title,
+.creation__title {
     margin: 10px 0;
     line-height: 30px;
     font-family: Nunito;
@@ -44,7 +46,8 @@ main{
 .fiche__text,
 .distinction__text,
 .conclusion__text,
-.resume__text {
+.resume__text,
+.creation__text {
     margin: 0;
     margin-bottom: 10px;
     font-family: Nunito;
@@ -54,7 +57,8 @@ main{
 }
 /*background*/
 .synopsis__background,
-.fiche__background {
+.fiche__background,
+.creation__background {
     background-color: var(--Vert-claire);
     padding: 0 20px;
     padding-bottom: 10px;
