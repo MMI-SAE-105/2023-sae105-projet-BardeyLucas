@@ -16,7 +16,9 @@ main{
 .article__Apropos,
 .article__plus,
 .article__debut,
-.article__suite{
+.article__suite,
+.article__explication,
+.article__bio{
     color:blue;
     padding: 0 20px;
 }
@@ -27,7 +29,8 @@ main{
 .article__resumeV,
 .article__citation,
 .article__jeunesse,
-.article__futur{
+.article__futur,
+.article__origine{
     color:indianred;
 }
 /*titre*/
@@ -47,7 +50,10 @@ main{
 .jeunesse__title,
 .debut__title,
 .suite__title,
-.futur__title {
+.futur__title,
+.explication__title,
+.origine__title,
+.bio__title {
     margin: 10px 0;
     line-height: 30px;
     font-family: Nunito;
@@ -71,7 +77,10 @@ main{
 .jeunesse__text,
 .debut__text,
 .suite__text,
-.futur__text {
+.futur__text,
+.explication__text,
+.origine__text,
+.bio__text {
     margin: 0;
     margin-bottom: 10px;
     font-family: Nunito;
@@ -86,7 +95,8 @@ main{
 .resumeV__background,
 .citation__background,
 .jeunesse__background,
-.futur__background {
+.futur__background,
+.origine__background {
     background-color: var(--Vert-claire);
     padding: 0 20px;
     padding-bottom: 10px;
@@ -96,7 +106,7 @@ main{
 .article__intro{
 
 }
-.intro__title{
+.intro__title, .article__title{
     line-height: 50px;
     text-align: center;
     font-family: Shrikhand;
@@ -204,6 +214,9 @@ main{
     font-weight: 400;
     font-size: 14px;
     color: var(--Noir);
+}
+.explication__title {
+    margin-top: 0;
 }
 q::before {
     content: '"';
