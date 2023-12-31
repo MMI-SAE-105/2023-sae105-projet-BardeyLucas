@@ -25,7 +25,6 @@ main{
 .trailer__title,
 .production__title,
 .musique__title,
-.fiche__title,
 .distinction__title,
 .conclusion__title,
 .redirect__title {
@@ -75,7 +74,7 @@ main{
 .intro__accroche{
     text-align: center;
     margin: 10px 0;
-    margin: 0;
+    margin: 0 20px;
     font-family: Nunito;
     font-weight: bold;
     font-size: 14px;
