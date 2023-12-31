@@ -14,7 +14,9 @@ main{
 .article__redirect,
 .article__resume,
 .article__Apropos,
-.article__plus{
+.article__plus,
+.article__debut,
+.article__suite{
     color:blue;
     padding: 0 20px;
 }
@@ -24,7 +26,8 @@ main{
 .article__creation,
 .article__resumeV,
 .article__citation,
-.article__jeunesse{
+.article__jeunesse,
+.article__futur{
     color:indianred;
 }
 /*titre*/
@@ -41,7 +44,10 @@ main{
 .resumeV__title,
 .plus__title,
 .citation__title,
-.jeunesse__title {
+.jeunesse__title,
+.debut__title,
+.suite__title,
+.futur__title {
     margin: 10px 0;
     line-height: 30px;
     font-family: Nunito;
@@ -62,7 +68,10 @@ main{
 .resumeV__text,
 .plus__text,
 .citation__text,
-.jeunesse__text {
+.jeunesse__text,
+.debut__text,
+.suite__text,
+.futur__text {
     margin: 0;
     margin-bottom: 10px;
     font-family: Nunito;
@@ -76,7 +85,8 @@ main{
 .creation__background,
 .resumeV__background,
 .citation__background,
-.jeunesse__background {
+.jeunesse__background,
+.futur__background {
     background-color: var(--Vert-claire);
     padding: 0 20px;
     padding-bottom: 10px;
