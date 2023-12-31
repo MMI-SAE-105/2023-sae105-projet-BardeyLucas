@@ -23,7 +23,8 @@ main{
 .article__fiche,
 .article__creation,
 .article__resumeV,
-.article__citation{
+.article__citation,
+.article__jeunesse{
     color:indianred;
 }
 /*titre*/
@@ -39,7 +40,8 @@ main{
 .Apropos__title,
 .resumeV__title,
 .plus__title,
-.citation__title {
+.citation__title,
+.jeunesse__title {
     margin: 10px 0;
     line-height: 30px;
     font-family: Nunito;
@@ -59,7 +61,8 @@ main{
 .Apropos__text,
 .resumeV__text,
 .plus__text,
-.citation__text {
+.citation__text,
+.jeunesse__text {
     margin: 0;
     margin-bottom: 10px;
     font-family: Nunito;
@@ -72,7 +75,8 @@ main{
 .fiche__background,
 .creation__background,
 .resumeV__background,
-.citation__background {
+.citation__background,
+.jeunesse__background {
     background-color: var(--Vert-claire);
     padding: 0 20px;
     padding-bottom: 10px;
