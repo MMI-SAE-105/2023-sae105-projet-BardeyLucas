@@ -4,12 +4,7 @@
 @import url('base/main.css');
 @import url('base/media.css');
 
-@import url('components/card-film.css');
-@import url('components/card-livre.css');
-@import url('components/card-projet.css');
-@import url('components/card-rando.css');
-@import url('components/card.css');
-@import url('components/section-information.css');
+@import url('components/card-redirect.css');
 
 @import url('layout/footer.css');
 @import url('layout/header.css');

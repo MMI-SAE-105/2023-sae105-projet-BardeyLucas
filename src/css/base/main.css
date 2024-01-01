@@ -11,7 +11,6 @@ main{
 .article__musique,
 .article__distinction,
 .article__conclusion,
-.article__redirect,
 .article__resume,
 .article__Apropos,
 .article__plus,
@@ -30,7 +29,8 @@ main{
 .article__citation,
 .article__jeunesse,
 .article__futur,
-.article__origine{
+.article__origine,
+.article__redirect{
     color:indianred;
 }
 /*titre*/
