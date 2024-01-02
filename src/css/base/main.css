@@ -106,7 +106,9 @@ main{
 .article__intro{
 
 }
-.intro__title, .article__title{
+.intro__title,
+.article__title,
+.projet__title{
     line-height: 50px;
     text-align: center;
     font-family: Shrikhand;
@@ -215,6 +217,14 @@ main{
     font-size: 14px;
     color: var(--Noir);
 }
+.projet__texte{
+    margin: 0 20px;
+    margin-bottom: 10px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
+}
 .explication__title {
     margin-top: 0;
 }
@@ -224,82 +234,3 @@ q::before {
 q::after {
     content: '"';
 }
-/* body{
-    background-color: var(--Blanc);
-}
-
-h2{
-    text-align: center;
-    font-family: Shrikhand;
-    font-weight: 400;
-    font-size: 16px;
-    color: var(--Vert)
-}
-h3{
-    margin:0 20px;
-    font-family: Nunito;
-    font-weight: bold;
-    font-size: 14px;
-}
-div>h3{
-    line-height: 50px;
-}
-p,q,blockquote,cite {
-    margin: 0 20px;
-    font-family: Nunito;
-    font-weight: regular;
-    font-size: 12px;
-}
-.full-title{
-    text-align: center;
-    margin-bottom: 10px;
-}
-.info-article{
-    display: flex;
-    margin-left:20px;
-}
-.information{
-    width: calc((180/335)*100%);
-}
-.information>h3{
-    line-height: normal;
-        margin-bottom: 20px;
-}
-.htable{
-    margin:0;
-    color:var(--Vert-AAA);
-}
-
-table{
-    font-family: Nunito;
-    font-weight: regular;
-    font-size: 12px;
-    color:var(--Vert-AAA);
-}
-.legend-button{
-    margin-left: 15px;
-    width: calc((140/335)*100%);
-}
-.legend-button>legend , .legend-button>legend>p , .legend-button>legend>p>q{
-    margin:0;
-}
-legend{
-    margin: 0 20px;
-    font-family: Nunito;
-    font-weight: regular;
-    font-size: 12px;
-    font-style: italic;
-}
-.legend-button>button{
-    background-color: var(--Blanc);
-    border: solid 1px var(--Vert-fonce);
-    border-radius: 5px;
-    height: 40px;
-    margin-top: 20px;
-}
-.hvert{
-    color: var(--Vert);
-}
-.citation{
-    margin-top: 20px;
-} */
