@@ -1,7 +1,11 @@
-/* .projet__positionement{
+.projet__positionement{
     display: flex;
     flex-wrap: wrap;
-    align-content: stretch;
+    justify-items: center;
+    justify-content: center;
+} 
+/* .projet__positionement a:nth-child(2n){
+    flex-direction: row-reverse;
 } */
 .projet__cardP{
     border-top: solid 1px var(--Vert-AAA);
@@ -9,7 +13,7 @@
     display: flex;
     gap: 10px;
     text-decoration: none;
-    width: 335px;
+    width: 375px;
 }
 .cardP__left{
     display: flex;
