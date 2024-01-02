@@ -228,6 +228,16 @@ main{
 .explication__title {
     margin-top: 0;
 }
+.intro__accrocheList {
+    margin-bottom: 20px;
+}
+.intro__texte {
+    margin: 10px 20px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
+}
 q::before {
     content: '"';
 }
