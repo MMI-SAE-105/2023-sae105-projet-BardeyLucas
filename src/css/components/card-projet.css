@@ -1,0 +1,56 @@
+.projet__cardP{
+    border-top: solid 1px var(--Vert-AAA);
+    padding: 10px 20px;
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+}
+.cardP__left{
+    display: flex;
+    flex-direction: column;
+}
+.cardP__image{
+    width: 120px;
+    border-radius: 5px;
+}
+.cardP__button{
+    width: 100px;
+    height: 30px;
+    margin: 0;
+    margin-top: -20px;
+    margin-left: 10px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
+    font-style: italic
+}
+.cardP__right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.cardP__title{
+    margin: 0;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--Vert);
+}
+.cardP__text{
+    margin: 0;
+    margin-top: 5px;
+    margin-left: 10px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
+}
+.cardP__auteur{
+    margin: 0;
+    margin-top: 5px;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Noir);
+}
