@@ -134,6 +134,9 @@
     color: var(--Blanc);
     text-decoration: none;
 }
+.bar__texteOn>p>span{
+    font-weight: 200;
+}
 .bar__texte{
     margin: 0;
     padding: 10px 30px;
