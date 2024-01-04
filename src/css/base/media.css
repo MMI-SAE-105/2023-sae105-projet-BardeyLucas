@@ -1,5 +1,9 @@
+.entete__CoverImage,
 .intro__CoverImage{
     width: 100%;
+}
+.entete__CoverImage{
+    margin-top: 10px;
 }
 .trailer__video {
     width: 100%;
