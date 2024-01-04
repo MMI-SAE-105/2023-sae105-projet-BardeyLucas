@@ -2,6 +2,7 @@ main{
     padding-top: 65px;
     background-color: var(--Blanc);
 }
+.accueil,
 .article{
 
 }
@@ -23,6 +24,9 @@ main{
     padding: 0 20px;
 }
 /*section coloré*/
+.accueil__entete,
+.accueil__rando,
+.accueil__redirect,
 .article__synopsis,
 .article__fiche,
 .article__creation,
