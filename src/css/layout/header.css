@@ -22,9 +22,11 @@
     flex-direction: row;
 }
 .header__logo{
-    margin-top: 10px;
     width: 60px;
     height: 40px;
+}
+.header__logo>img{
+
 }
 .header__title{
     align-self: center;
