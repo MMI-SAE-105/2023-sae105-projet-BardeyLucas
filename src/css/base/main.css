@@ -187,7 +187,7 @@ main{
 .rando__interface {
     height: 250px;
     background-color: var(--Vert-claire);
-    padding-top: 4px;
+    padding-top: 9px;
 }
 .interface__text{
     font-family: Nunito;
@@ -197,7 +197,6 @@ main{
     margin: 0 30px;
     margin-bottom: 5px;
 }
-
 .intro__title,
 .article__title,
 .projet__title{

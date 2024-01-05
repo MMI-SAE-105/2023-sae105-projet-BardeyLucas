@@ -1,0 +1,43 @@
+.interface__shearch{
+    position: absolute;
+    margin: 0 30px;
+    width: calc(100% - 60px);
+    height: 20px;
+    background-color: var(--Blanc);
+    border-radius: 5px;
+    display: flex;
+    border: solid 1px var(--Vert-fonce);
+    text-align: center
+}
+.shearch__input{
+    width: calc(100% - 135px);
+    height: 20px;
+    border-right: solid 0.5px var(--Vert-fonce) ;
+}
+.shearch__criteres{
+    width: 75px;
+    height: 20px;
+    border-left: solid 0.5px var(--Vert-fonce);
+}
+.criteres__text{
+    margin: 0;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Vert-fonce);
+    line-height: 20px;
+}
+.shearch__bouton{
+    width: 60px;
+    height: 20px;
+    background-color: var(--Vert);
+    border: 0;
+}
+.button__text{
+    margin: 0;
+    font-family: Nunito;
+    font-weight: regular;
+    font-size: 12px;
+    color: var(--Blanc);
+    line-height: 20px;
+}
