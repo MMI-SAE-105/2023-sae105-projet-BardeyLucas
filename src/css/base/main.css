@@ -184,12 +184,20 @@ main{
     font-size: 16px;
     color: var(--Vert);
 }
+.rando__interface {
+    height: 250px;
+    background-color: var(--Vert-claire);
+    padding-top: 4px;
+}
 .interface__text{
     font-family: Nunito;
     font-weight: regular;
     font-size: 12px;
     color: var(--Noir);
+    margin: 0 30px;
+    margin-bottom: 5px;
 }
+
 .intro__title,
 .article__title,
 .projet__title{
