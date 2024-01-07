@@ -7,17 +7,31 @@
     border-radius: 5px;
     display: flex;
     border: solid 1px var(--Vert-fonce);
-    text-align: center
 }
 .shearch__input{
     width: calc(100% - 135px);
     height: 20px;
     border-right: solid 0.5px var(--Vert-fonce) ;
+    padding: 2px 0;
+}
+.input__loupe {
+    width: 12px;
+    margin-left: 4px;
+}
+
+.input__croix {
+    width: 12px;
+    margin-left: calc(100% - 51px);
+}
+
+.input__local {
+    width: 12px;
 }
 .shearch__criteres{
     width: 75px;
     height: 20px;
     border-left: solid 0.5px var(--Vert-fonce);
+    text-align: center
 }
 .criteres__text{
     margin: 0;
@@ -32,6 +46,7 @@
     height: 20px;
     background-color: var(--Vert);
     border: 0;
+    text-align: center
 }
 .button__text{
     margin: 0;
