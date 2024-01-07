@@ -185,7 +185,6 @@ main{
     color: var(--Vert);
 }
 .rando__interface {
-    height: 250px;
     background-color: var(--Vert-claire);
     padding-top: 9px;
 }

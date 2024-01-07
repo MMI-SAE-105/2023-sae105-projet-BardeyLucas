@@ -1,0 +1,28 @@
+.proposition__carouselPosition{
+    margin: 10px 0;
+    display: flex;
+    gap: 5px;
+    justify-content: center
+}
+.carouselPosition__bar{
+    width: 10px;
+    height: 5px;
+    border: solid 0.5px var(--Vert-AAA);
+}
+.bar__etat0{
+
+}
+.bar__etat1{
+    background-color: var(--Vert);
+    border-start-start-radius: 5px;
+    border-end-start-radius: 5px;
+}
+.bar__etat2{
+    background-color: var(--Vert);
+    border-start-end-radius: 5px;
+    border-end-end-radius: 5px;
+}
+::-webkit-scrollbar {
+    height: 0;
+    /*Ce paramétre obligatoire semble utile qu'a affiché la scroll bar*/
+}
