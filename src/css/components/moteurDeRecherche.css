@@ -12,7 +12,7 @@
     width: calc(100% - 135px);
     height: 20px;
     border-right: solid 0.5px var(--Vert-fonce) ;
-    padding: 2px 0;
+    padding-top: 1px;
 }
 .input__loupe {
     width: 12px;
@@ -31,7 +31,7 @@
     width: 75px;
     height: 20px;
     border-left: solid 0.5px var(--Vert-fonce);
-    text-align: center
+    text-align: center;
 }
 .criteres__text{
     margin: 0;
