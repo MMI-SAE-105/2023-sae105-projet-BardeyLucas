@@ -197,6 +197,9 @@ main{
     margin: 0 30px;
     margin-bottom: 5px;
 }
+.proposition__carousel{
+    margin-top: 42px;
+}
 .intro__title,
 .article__title,
 .projet__title{
