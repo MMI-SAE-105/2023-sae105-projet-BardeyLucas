@@ -197,8 +197,19 @@ main{
     margin: 0 30px;
     margin-bottom: 5px;
 }
+.interface__proposition{
+    overflow: hidden;
+    margin: 0 26px;
+}
 .proposition__carousel{
     margin-top: 42px;
+    display: flex;
+    gap: 15px;
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    
 }
 .intro__title,
 .article__title,

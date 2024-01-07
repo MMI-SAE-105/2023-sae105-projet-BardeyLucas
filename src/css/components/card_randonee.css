@@ -6,6 +6,19 @@
     background-color: var(--Blanc);
     border-radius: 5px;
     border: solid 1px var(--Vert-AAA);
+    flex: none;
+    scroll-snap-align: start;
+}
+.cardV__titleBox{
+    position: relative;
+    margin: 0 10px;
+    width: 130px;
+    height: 15px;
+    background-color: var(--Blanc);
+    border: solid 1px var(--Vert-AAA);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-top: -84.5px;
 }
 .cardV__title{
     text-align: center;
@@ -14,15 +27,6 @@
     font-weight: 400;
     font-size: 12px;
     color: var(--Noir);
-    margin: 0 10px;
-    width: 130px;
-    line-height: 15px;
-    background-color: var(--Blanc);
-    border: solid 1px var(--Vert-AAA);
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    position: absolute;
-    margin-top: -85px;
 }
 .cardV__image{
     width: 100%;
@@ -30,6 +34,17 @@
     object-fit: cover;
     border-top-left-radius: 4px;
     border-top-right-radius: 4px;
+}
+.cardV__LensBox{
+    text-align: center;
+    background-color: var(--Blanc);
+    border: solid 1px var(--Vert-AAA);
+    width: 60px;
+    line-height: 16px;
+    border-top-left-radius: 5px;
+    margin-left: -78px;
+    margin-top: 45px;
+    position: relative;
 }
 .cardV__Lens,
 .CardV__text {
@@ -39,19 +54,8 @@
     font-size: 12px;
     color: var(--Vert-fonce);
 }
-.cardV__Lens{
-    text-align: center;
-    background-color: var(--Blanc);
-    border: solid 1px var(--Vert-AAA);
-    width: 60px;
-    line-height: 16px;
-    border-top-left-radius: 5px;
-    margin-left: 89px;
-    margin-top: -21px;
-    position: absolute;
-}
 .cardV__info{
-    margin-top: -4px;
+    margin-top: -1px;
     width: 100%;
     border-top: solid 1px var(--Vert-AAA);
 }
@@ -60,7 +64,8 @@
     flex-wrap: wrap;
     row-gap: 5px;
     column-gap: 10px;
-    margin: 0 10px;
+    margin: 0;
+    margin-left: 10px;
     padding-top: 8px;
 }
 .CardV__donnee{
