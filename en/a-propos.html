@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randoala|A propos</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__on">
+            <div class="header__bar">
+                <a href="index.html">
+                    <div class="header__logo">
+                        <img src="/public/img/icones/logo.svg" alt="logo du site">
+                    </div>
+                </a>
+                <h1 class="header__title">Randoala</h1>
+                <img class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
+                <!-- <img class="header__menu--open" src="/public/img/icones/Menu-Croix.svg"> -->
+            </div>
+        </div>
+        <!-- <nav class="menu__overlay">
+                <div class="menu__firstCase P1">
+                    <a href="rando.html">
+                        <p class="menu__texte">Randonnées</p>
+                    </a>
+                    <img class="menu__image" src="/public/img/icones/FlecheBas.svg">
+                </div>
+                <div class="menu__firstCase P2">
+                    <p class="menu__texte">Articles</p>
+                    <img class="menu__image" src="/public/img/icones/FlecheHaut.svg">
+                </div>
+                <div class="menu__caseOpen">
+                    <div class="menu__secondCase P3">
+                        <a href="replique.html">
+                            <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
+                        </a>
+                    </div>
+                    <div class="menu__secondCase P4">
+                        <a href="film.html">
+                            <p class="menu__texte">Il était une forêt [film]</p>
+                        </a>
+                    </div>
+                    <div class="menu__secondCase P5">
+                        <a href="list-livre.html">
+                            <p class="menu__texte">Il était une forêt [livre]</p>
+                        </a>
+                    </div>
+                    <div class="menu__secondCase P6">
+                        <a href="realisateur.html">
+                            <p class="menu__texte">Luc Jacquet [réalisateur]</p>
+                        </a>
+                    </div>
+                    <div class="menu__secondCase P7">
+                        <a href="musique.html">
+                            <p class="menu__texte">Iris page two [musique]</p>
+                        </a>
+                    </div>
+                </div>
+            </nav> -->
+    </header>
+    <main class="article">
+        <h2 class="article__title">A propos</h2>
+        <section class="article__explication">
+            <h3 class="explication__title">Le principe de Randoala</h3>
+            <p class="explication__text">Randoala est un site de sur le thème de la randonnée proposant de centraliser les tracés de différents autres sites de
+            randonnées de façon à vous faire gagner du temps dans vos recherches de nouveau parcours sans passer par des dizaine de
+            sites différents.</p>
+            <p class="explication__text">Mais aussi un site informatif vous apportant de multiples articles sur ce thème.</p>
+            <p class="explication__text">Et ce site aura pour particularité de redonner une partie de ces bénéfices à des associations à but non lucratif
+            spécialisées dans le sauvetage animalier de la reforestation.</p>
+        </section>
+        <section class="article__origine">
+            <div class="origine__background">
+                <h3 class="origine__title">Origine du projet</h3>
+                <p class="origine__text">Le site Randoala a été réalisé dans un cadre scolaire pour le projet individuel des premières de l'année 2023 organisé
+                par le département MMI de l’IUT Belfort Montbéliard.</p>
+                <p class="origine__text">Le thème de cet exercice était les répliques de films.</p>
+                <p class="origine__text">Dans mon cas ma réplique choisi est “Des arbres à perte de vue” du film “Il était une forêt”
+                Un film-documentaire nous parlant de la beauté des forêts primordiales et de son fonctionnement. </p>
+                <p class="origine__text">Une réplique parfaite pour aborder ma passion pour la nature et surtout pour la randonnée.</p>
+                <p class="origine__text">(Le principe de soutien d’association provient de la version original de la réplique
+                “Des arbres à perte de vue, et une vie animal intense, ce qu’on voit c’est des arbres, surtout des arbres.”)</p>
+            </div>
+        </section>
+        <section class="article__bio">
+            <h3 class="bio__title">Qui suis-je ?</h3>
+            <p class="bio__text">Bonjour !</p>
+            <p class="bio__text">Je m’appelle Lucas Bardey et je suis un étudiant de 19 ans en première année de MMI</p>
+            <p class="bio__text">Mes passions sont le jeux vidéo, la culture japonaise et bien évidemment, la marche en forêt/montagne.</p>
+            <p class="bio__text">Et pour le futur, mon objectif est de devenir level designer pour continuer à travailler dans l’une de mes passions </p>
+            <p class="bio__text">Je vous souhaite une bonne exploration de mon site, bonne journée.</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <section class="footer__glossaire">
+            <div class="glossaire__case1">
+                <h2 class="glossaire__titre">Glossaire</h2>
+            </div>
+            <div class="glossaire__case2">
+                <p class="glossaire__texte">[1] Glossaire</p>
+            </div>
+        </section>
+        <section class="footer__form">
+            <div class="form__case1">
+                <h2 class="form__titre">Contact</h2>
+            </div>
+            <form class="form__formulaire">
+                <div class="form__prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" required minlength="1" maxlength="20">
+                </div>
+                <div class="form__nom">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" required minlength="1" maxlength="20">
+                </div>
+                <div class="form__email">
+                    <label for="contacte">Adresse mail</label>
+                    <input type="email" id="contacte" required minlength="1" maxlength="320">
+                </div>
+                <div class="form__sujet">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" required minlength="1" maxlength="50">
+                </div>
+                <div class="form__message">
+                    <label for="message">Message</label>
+                    <textarea id="message" required minlength="1" maxlength="1000"></textarea>
+                </div>
+                <div class="form__case2">
+                    <button class="form__button">Envoyer</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer__assos">
+            <h2 class="assos__titre">Associations soutenus</h2>
+            <div class="assos__sponso">
+                <a href="https://www.fondationbrigittebardot.fr/" class="assos__icone"><img src="/public/img/FBB.svg"
+                        alt="logo de la foncation brigitte bardot"></a>
+                <a href="https://www.wwf.fr/" class="assos__icone"><img src="/public/img/WWF.svg" alt="logo de la WWF"></a>
+                <a href="https://www.coeurdeforet.com/" class="assos__icone assos__iconeBar"><img src="/public/img/CDF.svg"
+                        alt="logo de coeur de foret"></a>
+                <a href="https://www.la-spa.fr/" class="assos__icone"><img src="/public/img/SPA.svg"
+                        alt="logo de la spa"></a>
+            </div>
+        </section>
+        <section class="footer__bar">
+            <div class="bar__on">
+                <a href="a-propos.html" class="bar__texteOn">
+                    <p>À propos</p>
+                </a>
+                <a href="projet.html" class="bar__texteOn">
+                    <p>Autres projets</p>
+                </a>
+                <a href="../en/index.html" class="bar__texteOn">
+                    <p>FR/<span>EN</span></p>
+                </a>
+            </div>
+            <p class="bar__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    href="https://mmimontbeliard.com/projets-etudiants">MMI de Montbéliard</a></p>
+        </section>
+    </footer>
+</body>
+</html>

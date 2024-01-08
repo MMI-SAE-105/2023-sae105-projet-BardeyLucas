@@ -1,1 +1,372 @@
-HUH ?
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randoala|Accueil</title>
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header__on">
+            <div class="header__bar">
+                <a href="index.html">
+                    <div class="header__logo">
+                        <img src="/public/img/icones/logo.svg" alt="logo du site">
+                    </div>
+                </a>
+                <h1 class="header__title">Randoala</h1>
+                <img class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
+                <!-- <img class="header__menu--open" src="/public/img/icones/Menu-Croix.svg"> -->
+            </div>
+        </div>
+        <!-- <nav class="menu__overlay">
+            <div class="menu__firstCase P1">
+                <a href="rando.html">
+                <p class="menu__texte">Randonnées</p>
+                </a>
+                <img class="menu__image" src="/public/img/icones/FlecheBas.svg">
+            </div>
+            <div class="menu__firstCase P2">
+                <p class="menu__texte">Articles</p>
+                <img class="menu__image" src="/public/img/icones/FlecheHaut.svg">
+            </div>
+            <div class="menu__caseOpen">
+                <div class="menu__secondCase P3">
+                    <a href="replique.html">
+                    <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P4">
+                    <a href="film.html">
+                    <p class="menu__texte">Il était une forêt [film]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P5">
+                    <a href="list-livre.html">
+                    <p class="menu__texte">Il était une forêt [livre]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P6">
+                    <a href="realisateur.html">
+                    <p class="menu__texte">Luc Jacquet [réalisateur]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P7">
+                    <a href="musique.html">
+                    <p class="menu__texte">Iris page two [musique]</p>
+                    </a>
+                </div>
+            </div>
+        </nav>  -->
+    </header>
+    <main class="accueil">
+        <header class="accueil__entete">
+            <div class="entete__citation">
+                <h2 class="citation__text">Des arbres à pertes de vue</h2>
+            </div>
+            <img class="entete__CoverImage" src="../public/img/cover.png" alt="foret autonal">
+            <div class="entete__banderole">
+                <p class="banderole__textAccueil">Bienvenue sur Randoala !</p>
+                <p class="banderole__textClassic">Le site numéro 1 de la randonnée éco-responsable!</p>
+            </div>
+            <div class="entete__intro">
+                <p class="intro__text">&nbsp;&nbsp;&nbsp;Entre multiples parcours et articles variés,
+                    profitez agréablement de votre périple.</p>
+                <p class="intro__text">&nbsp;&nbsp;&nbsp;Et n'oubliez pas, chaque pubs serviront à soutenir financièrement des associations de protection
+                    animalière et de reforestation.</p>
+            </div>
+        </header>
+        <!--section randonnées-->
+        <nav class="accueil__rando">
+            <div class="rando__bandeau">
+                <h3 class="bandeau__title">Randonnées</h3>
+            </div>
+            <div class="rando__interface">
+                <p class="interface__text">Trouver une Randonnées</p>
+                <!--moteur de recherche-->
+                <div class="interface__shearch">
+                    <div class="shearch__input">
+                        <img class="input__loupe" src="/public/img/icones/loupe.svg" alt="loupe">
+                        <img class="input__croix" src="/public/img/icones/Croix.svg" alt="quitter">
+                        <img class="input__local" src="/public/img/icones/marqueur.svg" alt="localisation">
+                    </div>
+                    <div class="shearch__criteres">
+                        <p class="criteres__text">+ de critères</p>
+                    </div>
+                    <button class="shearch__bouton">
+                        chercher
+                    </button>
+                </div>
+                <!--Carousel-->
+                <div class="interface__proposition">
+                    <div class="proposition__carousel">
+                        <!--Cards-->
+                        <div class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                            <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                            <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                                <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                            <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                                <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+        
+                    </div>
+                    <div class="proposition__carouselPosition">
+                        <div class="carouselPosition__bar bar__etat1"></div>
+                        <div class="carouselPosition__bar bar__etat2"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <!--Section autres projets-->
+        <nav class="accueil__redirect">
+            <div class="redirect__bandeau">
+                <h3 class="bandeau__title">Sélection de la rédaction</h3>
+            </div>
+            <a class="redirect__cardR" href="film.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/film.png" alt="film cover">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Il était une forêt [Le film]</h3>
+                    <p class="zoneDeTexte__text">Dans le documentaire fascinant "Il était une forêt," le réalisateur Luc Jacquet nous transporte dans un voyage visuel envoûtant.</p>
+                </div>
+            </a>
+            <a class="redirect__cardR" href="livre.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/livre.png" alt="livre cover">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Il était une forêt [Le livre]</h3>
+                    <p class="zoneDeTexte__text">Explorez la magie de la forêt à travers le livre "Il était une forêt" de Francis Hallé. </p>
+                    <p class="zoneDeTexte__text">Plongez-vous dans une aventure fascinante.</p>
+                </div>
+            </a>
+            <a class="redirect__cardR" href="musique.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/musique.png" alt="affiche film">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Iris page two</h3>
+                    <p class="zoneDeTexte__text">Iris page two, une ost à la fois paisible et grave, soulignant les triste propos d’un thriller politique audio militant de la WWF.</p>
+                </div>
+            </a>
+            <a class="redirect__cardR" href="realisateur.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/auteur.png" alt="photographie luc jaquet">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Luc Jaquet</h3>
+                    <p class="zoneDeTexte__text">Luc Jacquet, cinéaste français renommé, a consacré sa carrière à capturer la beauté de la nature et à sensibiliser le monde.</p>
+                </div>
+            </a>
+        </nav>
+    </main>
+    <footer class="footer">
+        <section class="footer__glossaire">
+            <div class="glossaire__case1">
+                <h2 class="glossaire__titre">Glossaire</h2>
+            </div>
+            <div class="glossaire__case2">
+                <p class="glossaire__texte">[1] Glossaire</p>
+            </div>
+        </section>
+        <section class="footer__form">
+            <div class="form__case1">
+                <h2 class="form__titre">Contact</h2>
+            </div>
+            <form class="form__formulaire">
+                <div class="form__prenom">
+                    <label for="prenom">Prénom</label>
+                    <input type="text" id="prenom" required minlength="1" maxlength="20">
+                </div>
+                <div class="form__nom">
+                    <label for="nom">Nom</label>
+                    <input type="text" id="nom" required minlength="1" maxlength="20">
+                </div>
+                <div class="form__email">
+                    <label for="contacte">Adresse mail</label>
+                    <input type="email" id="contacte" required minlength="1" maxlength="320">
+                </div>
+                <div class="form__sujet">
+                    <label for="sujet">Sujet</label>
+                    <input type="text" id="sujet" required minlength="1" maxlength="50">
+                </div>
+                <div class="form__message">
+                    <label for="message">Message</label>
+                    <textarea id="message" required minlength="1" maxlength="1000"></textarea>
+                </div>
+                <div class="form__case2">
+                    <button class="form__button">Envoyer</button>
+                </div>
+            </form>
+        </section>
+        <section class="footer__assos">
+            <h2 class="assos__titre">Associations soutenus</h2>
+            <div class="assos__sponso">
+                <a href="https://www.fondationbrigittebardot.fr/" class="assos__icone"><img src="/public/img/FBB.svg"
+                        alt="logo de la foncation brigitte bardot"></a>
+                <a href="https://www.wwf.fr/" class="assos__icone"><img src="/public/img/WWF.svg" alt="logo de la WWF"></a>
+                <a href="https://www.coeurdeforet.com/" class="assos__icone assos__iconeBar"><img src="/public/img/CDF.svg"
+                        alt="logo de coeur de foret"></a>
+                <a href="https://www.la-spa.fr/" class="assos__icone"><img src="/public/img/SPA.svg"
+                        alt="logo de la spa"></a>
+            </div>
+        </section>
+        <section class="footer__bar">
+            <div class="bar__on">
+                <a href="a-propos.html" class="bar__texteOn">
+                    <p>À propos</p>
+                </a>
+                <a href="projet.html" class="bar__texteOn">
+                    <p>Autres projets</p>
+                </a>
+                <a href="../en/index.html" class="bar__texteOn">
+                    <p>FR/<span>EN</span></p>
+                </a>
+            </div>
+            <p class="bar__texte">Projet réalisé dans le cadre d’un exercice pédagogique au département <a
+                    href="https://mmimontbeliard.com/projets-etudiants">MMI de Montbéliard</a></p>
+        </section>
+    </footer>
+</body>
+
+</html>
