@@ -128,7 +128,7 @@
     margin: 0;
     display: flex;
     gap: 4px;
-    margin: 0 2px;
+    margin: 0 10px;
 }
 .cardV__List2>dt, .cardV__List2>dd{
     line-height: 25px;
