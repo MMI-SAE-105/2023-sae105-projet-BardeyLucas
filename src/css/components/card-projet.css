@@ -37,6 +37,8 @@
     font-size: 12px;
     color: var(--Noir);
     font-style: italic;
+    text-align: center;
+    line-height: 30px;
 }
 .cardP__right{
     display: flex;
