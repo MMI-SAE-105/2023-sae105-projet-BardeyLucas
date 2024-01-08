@@ -1,0 +1,15 @@
+.article__car{
+    overflow: hidden;
+}
+.article__carousel{
+    margin:20px 0;
+    width: 100%;
+    height: 200px;
+    background-color: var(--Vert-claire);
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    display: flex;
+    padding: 0 50px;
+    gap: 50px;
+}
