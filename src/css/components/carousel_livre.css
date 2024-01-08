@@ -4,12 +4,52 @@
 .article__carousel{
     margin:20px 0;
     width: 100%;
-    height: 200px;
+    height: 160px;
     background-color: var(--Vert-claire);
     overflow-x: scroll;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
     display: flex;
-    padding: 0 50px;
+    padding: 20px 50px;
     gap: 50px;
+}
+.carousel__cardL{
+    width: 200px;
+}
+.cardL__dateBox{
+    height: 40px;
+    width: 100px;
+    background-color: var(--Blanc);
+    border: solid 1px var(--Vert);
+    border-bottom: none;
+    margin: auto;
+}
+.cardL__date{
+    margin: 0;
+    line-height: 40px;
+    text-align: center;
+    font-family: Shrikhand;
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--Noir);
+}
+.cardL__image{
+    width: 100%;
+}
+.cardL__titleBox{
+    position: relative;
+    margin-top: -35px;
+    width: 198px;
+    height: 30px;
+    background: rgba(250, 255, 250, 0.60);
+    border: solid 1px var(--Vert);
+    line-height: 30px;
+    text-align: center;
+}
+.cardL__title {
+    margin: 0;
+    font-family: Nunito;
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--Noir);
 }
