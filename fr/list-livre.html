@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randoala|Balade de la biodiversité : Petite boucle de Coly</title>
+    <title>Randoala|Bibliographie de Luc Jaquet</title>
         <link rel="stylesheet" href="../src/css/style.css">
         <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
@@ -66,7 +66,94 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="article article__car">
+        <section class="article__intro">
+            <h2 class="intro__title">Bibliographie de Luc Jaquet</h2>
+            <h3 class="intro__accroche">Des écrits impactants et renversants</h3>
+        </section>
+        <section class="article__carousel" x-data="{hrefCourant: '#ecran-1',}"x-ref="parent" @scroll.debounce.250ms.passive="
+hrefCourant = '#'+
+                  [...$refs.parent.children]
+                   .find(e=>e.getBoundingClientRect().x>=0)
+                   .id
+                                     "
+    >
+            <!--Card-->
+            <div id="ecran-1" class="carousel__cardL">
+                <div class="cardL__dateBox">
+                    <p class="cardL__date">1993</p>
+                </div>
+                <img class="cardL__image" src="../public/img/livre-image/Marche.png" alt="la marche de l'empereur">
+                <div class="cardL__titleBox">
+                    <p class="cardL__title">La marche de l'empereur</p>
+                </div>
+            </div>
+            <div id="ecran-2" class="carousel__cardL">
+                <div class="cardL__dateBox">
+                    <p class="cardL__date">1993</p>
+                </div>
+                <img class="cardL__image" src="../public/img/livre-image/Renard.png" alt="Le renard et l'enfant">
+                <div class="cardL__titleBox">
+                    <p class="cardL__title">Le renard et l’enfant</p>
+                </div>
+            </div>
+            <div id="ecran-3" class="carousel__cardL">
+                <div class="cardL__dateBox">
+                    <p class="cardL__date">1995</p>
+                </div>
+                <img class="cardL__image" src="../public/img/livre-image/Foret.png" alt="Il était une forêt">
+                <div class="cardL__titleBox">
+                    <p class="cardL__title">Il était une forêt</p>
+                </div>
+            </div>
+            <div id="ecran-4" class="carousel__cardL">
+                <div class="cardL__dateBox">
+                    <p class="cardL__date">1996</p>
+                </div>
+                <img class="cardL__image" src="../public/img/livre-image/Glacier.png" alt="La glace et le ciel">
+                <div class="cardL__titleBox">
+                    <p class="cardL__title">La glace et le ciel</p>
+                </div>
+            </div>
+            <div id="ecran-5" class="carousel__cardL">
+                <div class="cardL__dateBox">
+                    <p class="cardL__date">1996</p>
+                </div>
+                <img class="cardL__image" src="../public/img/livre-image/Empereur.png" alt="L’empereur">
+                <div class="cardL__titleBox">
+                    <p class="cardL__title">L’empereur</p>
+                </div>
+            </div>
+        </section>
+        <nav class="article__redirect">
+            <h3 class="redirect__title">Nos lecteurs ont lus ensuite</h3>
+            <!--Cards-->
+            <a class="redirect__cardR" href="realisateur.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/auteur.png" alt="portrait luc jaquet">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Luc Jacquet</h3>
+                    <p class="zoneDeTexte__text">Luc Jacquet, cinéaste français renommé, a consacré sa carrière à capturer la
+                        beauté de la nature et à sensibiliser le monde.</p>
+                </div>
+            </a>
+            <a class="redirect__cardR" href="list-livre.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/livre.png" alt="film cover">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Il était une forêt [Le livre]</h3>
+                    <p class="zoneDeTexte__text">Explorez la magie de la forêt à travers le livre "Il était une forêt" de
+                        Francis Hallé. </p>
+                    <p class="zoneDeTexte__text">Plongez-vous dans une aventure fascinante.</p>
+                </div>
+            </a>
+            <a class="redirect__cardR" href="list-film.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/filmographie.png" alt="portrait luc jaquet">
+                <div class="cardR__zoneDeTexte">
+                    <h3 class="zoneDeTexte__title">Filmographie de Luc Jaquet</h3>
+                    <p class="zoneDeTexte__text">De la banquise à la forêt, voici les documentaires passionnants et alarmants de
+                        Luc Jacquet.</p>
+                </div>
+            </a>
+        </nav>
     </main>
     <footer class="footer">
         <section class="footer__glossaire">
@@ -127,7 +214,7 @@
                 <a href="projet.html" class="bar__texteOn">
                     <p>Autres projets</p>
                 </a>
-                <a href="../fr/rando.html" class="bar__texteOn">
+                <a href="../en/list-livre.html" class="bar__texteOn">
                     <p>FR/<span>EN</span></p>
                 </a>
             </div>

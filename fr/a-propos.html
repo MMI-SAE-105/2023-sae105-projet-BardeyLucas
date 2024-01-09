@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randoala|Balade de la biodiversité : Petite boucle de Coly</title>
-        <link rel="stylesheet" href="../src/css/style.css">
-        <script defer src="https://unpkg.com/alpinejs"></script>
+    <title>Randoala|A propos</title>
+    <link rel="stylesheet" href="../src/css/style.css">
+    <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
 <body x-data="{Menu: 0}" :class="{noscroll:Menu}">
     <header class="header">
@@ -66,7 +66,38 @@
             </div>
         </nav>
     </header>
-    <main>
+    <main class="article">
+        <h2 class="article__title">A propos</h2>
+        <section class="article__explication">
+            <h3 class="explication__title">Le principe de Randoala</h3>
+            <p class="explication__text">Randoala est un site de sur le thème de la randonnée proposant de centraliser les tracés de différents autres sites de
+            randonnées de façon à vous faire gagner du temps dans vos recherches de nouveau parcours sans passer par des dizaine de
+            sites différents.</p>
+            <p class="explication__text">Mais aussi un site informatif vous apportant de multiples articles sur ce thème.</p>
+            <p class="explication__text">Et ce site aura pour particularité de redonner une partie de ces bénéfices à des associations à but non lucratif
+            spécialisées dans le sauvetage animalier de la reforestation.</p>
+        </section>
+        <section class="article__origine">
+            <div class="origine__background">
+                <h3 class="origine__title">Origine du projet</h3>
+                <p class="origine__text">Le site Randoala a été réalisé dans un cadre scolaire pour le projet individuel des premières de l'année 2023 organisé
+                par le département MMI de l’IUT Belfort Montbéliard.</p>
+                <p class="origine__text">Le thème de cet exercice était les répliques de films.</p>
+                <p class="origine__text">Dans mon cas ma réplique choisi est “Des arbres à perte de vue” du film “Il était une forêt”
+                Un film-documentaire nous parlant de la beauté des forêts primordiales et de son fonctionnement. </p>
+                <p class="origine__text">Une réplique parfaite pour aborder ma passion pour la nature et surtout pour la randonnée.</p>
+                <p class="origine__text">(Le principe de soutien d’association provient de la version original de la réplique
+                “Des arbres à perte de vue, et une vie animal intense, ce qu’on voit c’est des arbres, surtout des arbres.”)</p>
+            </div>
+        </section>
+        <section class="article__bio">
+            <h3 class="bio__title">Qui suis-je ?</h3>
+            <p class="bio__text">Bonjour !</p>
+            <p class="bio__text">Je m’appelle Lucas Bardey et je suis un étudiant de 19 ans en première année de MMI</p>
+            <p class="bio__text">Mes passions sont le jeux vidéo, la culture japonaise et bien évidemment, la marche en forêt/montagne.</p>
+            <p class="bio__text">Et pour le futur, mon objectif est de devenir level designer pour continuer à travailler dans l’une de mes passions </p>
+            <p class="bio__text">Je vous souhaite une bonne exploration de mon site, bonne journée.</p>
+        </section>
     </main>
     <footer class="footer">
         <section class="footer__glossaire">
@@ -127,7 +158,7 @@
                 <a href="projet.html" class="bar__texteOn">
                     <p>Autres projets</p>
                 </a>
-                <a href="../fr/rando.html" class="bar__texteOn">
+                <a href="../en/a-propos.html" class="bar__texteOn">
                     <p>FR/<span>EN</span></p>
                 </a>
             </div>
