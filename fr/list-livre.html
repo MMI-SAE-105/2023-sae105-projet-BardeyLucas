@@ -71,9 +71,15 @@
             <h2 class="intro__title">Bibliographie de Luc Jaquet</h2>
             <h3 class="intro__accroche">Des écrits impactants et renversants</h3>
         </section>
-        <section class="article__carousel">
+        <section class="article__carousel" x-data="{hrefCourant: '#ecran-1',}"x-ref="parent" @scroll.debounce.250ms.passive="
+hrefCourant = '#'+
+                  [...$refs.parent.children]
+                   .find(e=>e.getBoundingClientRect().x>=0)
+                   .id
+                                     "
+    >
             <!--Card-->
-            <div class="carousel__cardL">
+            <div id="ecran-1" class="carousel__cardL">
                 <div class="cardL__dateBox">
                     <p class="cardL__date">1993</p>
                 </div>
@@ -82,7 +88,7 @@
                     <p class="cardL__title">La marche de l'empereur</p>
                 </div>
             </div>
-            <div class="carousel__cardL">
+            <div id="ecran-2" class="carousel__cardL">
                 <div class="cardL__dateBox">
                     <p class="cardL__date">1993</p>
                 </div>
@@ -91,7 +97,7 @@
                     <p class="cardL__title">Le renard et l’enfant</p>
                 </div>
             </div>
-            <div class="carousel__cardL">
+            <div id="ecran-3" class="carousel__cardL">
                 <div class="cardL__dateBox">
                     <p class="cardL__date">1995</p>
                 </div>
@@ -100,7 +106,7 @@
                     <p class="cardL__title">Il était une forêt</p>
                 </div>
             </div>
-            <div class="carousel__cardL">
+            <div id="ecran-4" class="carousel__cardL">
                 <div class="cardL__dateBox">
                     <p class="cardL__date">1996</p>
                 </div>
@@ -109,7 +115,7 @@
                     <p class="cardL__title">La glace et le ciel</p>
                 </div>
             </div>
-            <div class="carousel__cardL">
+            <div id="ecran-5" class="carousel__cardL">
                 <div class="cardL__dateBox">
                     <p class="cardL__date">1996</p>
                 </div>
@@ -130,19 +136,21 @@
                         beauté de la nature et à sensibiliser le monde.</p>
                 </div>
             </a>
-            <a class="redirect__cardR" href="film.html">
-                <img class="cardR__image" src="../public/img/redirect-icone/film.png" alt="cover film">
+            <a class="redirect__cardR" href="list-livre.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/livre.png" alt="film cover">
                 <div class="cardR__zoneDeTexte">
-                    <h3 class="zoneDeTexte__title">Il était une forêt [Le film]</h3>
-                    <p class="zoneDeTexte__text">Dans le documentaire fascinant "Il était une forêt," le réalisateur Luc Jacquet nous transporte dans un voyage visuel envoûtant.</p>
+                    <h3 class="zoneDeTexte__title">Il était une forêt [Le livre]</h3>
+                    <p class="zoneDeTexte__text">Explorez la magie de la forêt à travers le livre "Il était une forêt" de
+                        Francis Hallé. </p>
+                    <p class="zoneDeTexte__text">Plongez-vous dans une aventure fascinante.</p>
                 </div>
             </a>
-            <a class="redirect__cardR" href="list-livre.html">
-                <img class="cardR__image" src="../public/img/redirect-icone/biographie.png" alt="portrait luc jaquet">
+            <a class="redirect__cardR" href="list-film.html">
+                <img class="cardR__image" src="../public/img/redirect-icone/filmographie.png" alt="portrait luc jaquet">
                 <div class="cardR__zoneDeTexte">
-                    <h3 class="zoneDeTexte__title">Bibliographie de Luc Jaquet</h3>
-                    <p class="zoneDeTexte__text">Voici l’ensemble de la bibliographie du Documentaliste, Réalisateur et Scénariste</p>
-                    <p class="zoneDeTexte__text">Luc Jaquet</p>
+                    <h3 class="zoneDeTexte__title">Filmographie de Luc Jaquet</h3>
+                    <p class="zoneDeTexte__text">De la banquise à la forêt, voici les documentaires passionnants et alarmants de
+                        Luc Jacquet.</p>
                 </div>
             </a>
         </nav>

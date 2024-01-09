@@ -10,10 +10,11 @@
     scroll-snap-type: x mandatory;
     display: flex;
     padding: 20px 50px;
-    gap: 50px;
 }
 .carousel__cardL{
     width: 200px;
+    scroll-snap-align: start;
+    padding-left: 50px;
 }
 .cardL__dateBox{
     height: 40px;
