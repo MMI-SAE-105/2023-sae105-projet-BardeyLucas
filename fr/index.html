@@ -23,18 +23,18 @@
                 </div>
             </div>
         </div>
-        <nav x-show="Menu == 1" class="menu__overlay">
+        <nav x-show="Menu >= 1" class="menu__overlay" x-data="{SousMenu: 0}">
             <div class="menu__firstCase P1">
                 <a href="rando.html">
                 <p class="menu__texte">Randonnées</p>
                 </a>
-                <img class="menu__image" src="/public/img/icones/FlecheBas.svg">
             </div>
             <div class="menu__firstCase P2">
                 <p class="menu__texte">Articles</p>
-                <img class="menu__image" src="/public/img/icones/FlecheHaut.svg">
+                <img @click="SousMenu = 0" x-show="SousMenu == 1" class="menu__image" src="/public/img/icones/FlecheHaut.svg">
+                <img @click="SousMenu = 1" x-show="SousMenu == 0" class="menu__image" src="/public/img/icones/FlecheBas.svg">
             </div>
-            <div class="menu__caseOpen">
+            <div class="menu__caseOpen" x-show="SousMenu == 1">
                 <div class="menu__secondCase P3">
                     <a href="replique.html">
                     <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
