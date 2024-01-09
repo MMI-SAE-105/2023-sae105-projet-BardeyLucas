@@ -24,5 +24,6 @@
 }
 ::-webkit-scrollbar {
     height: 0;
+    width: 0;
     /*Ce paramétre obligatoire semble utile qu'a affiché la scroll bar*/
 }
