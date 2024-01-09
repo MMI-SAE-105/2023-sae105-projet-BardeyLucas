@@ -27,11 +27,11 @@
         <nav x-show="Menu >= 1" class="menu__overlay" x-data="{SousMenu: 0}">
             <div class="menu__firstCase P1">
                 <a href="rando.html">
-                    <p class="menu__texte">Randonnées</p>
+                    <p class="menu__texte">Hiking</p>
                 </a>
             </div>
             <div class="menu__firstCase P2">
-                <p class="menu__texte">Articles</p>
+                <p class="menu__texte">Items</p>
                 <img @click="SousMenu = 0" x-show="SousMenu == 1" class="menu__image"
                     src="/public/img/icones/FlecheHaut.svg">
                 <img @click="SousMenu = 1" x-show="SousMenu == 0" class="menu__image"
@@ -40,27 +40,27 @@
             <div class="menu__caseOpen" x-show="SousMenu == 1">
                 <div class="menu__secondCase P3">
                     <a href="replique.html">
-                        <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
+                        <p class="menu__texte">“Trees as far as the eye can see” [others]</p>
                     </a>
                 </div>
                 <div class="menu__secondCase P4">
                     <a href="film.html">
-                        <p class="menu__texte">Il était une forêt [film]</p>
+                        <p class="menu__texte">Once Upon a Forest [film]</p>
                     </a>
                 </div>
                 <div class="menu__secondCase P5">
                     <a href="list-livre.html">
-                        <p class="menu__texte">Il était une forêt [livre]</p>
+                        <p class="menu__texte">Once Upon a Forest [book]</p>
                     </a>
                 </div>
                 <div class="menu__secondCase P6">
                     <a href="realisateur.html">
-                        <p class="menu__texte">Luc Jacquet [réalisateur]</p>
+                        <p class="menu__texte">Luc Jacquet [director]</p>
                     </a>
                 </div>
                 <div class="menu__secondCase P7">
                     <a href="musique.html">
-                        <p class="menu__texte">Iris page two [musique]</p>
+                        <p class="menu__texte">Iris page two [music]</p>
                     </a>
                 </div>
             </div>
