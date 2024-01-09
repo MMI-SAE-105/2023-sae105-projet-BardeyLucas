@@ -102,10 +102,16 @@
                     </button>
                 </div>
                 <!--Carousel-->
-                <div class="interface__proposition">
-                    <div class="proposition__carousel">
+                <div class="interface__proposition" x-data="{hrefCourant: '#ecran-1',}">
+                    <div class="proposition__carousel" x-ref="parent" @scroll.debounce.250ms.passive="
+hrefCourant = '#'+
+                  [...$refs.parent.children]
+                   .find(e=>e.getBoundingClientRect().x>=0)
+                   .id
+                                     "
+    >
                         <!--Cards-->
-                        <div class="carousel__cardV">
+                        <div id="ecran-1" class="carousel__cardV">
                             <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
                             <div class="cardV__titleBox">
                                 <h4 class="cardV__title">Petite boucle de Coly</h4>
@@ -142,7 +148,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <div class="carousel__cardV">
+                        <div id="ecran-2" class="carousel__cardV">
                             <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
                             <div class="cardV__titleBox">
                                 <h4 class="cardV__title">Petite boucle de Coly</h4>
@@ -179,7 +185,7 @@
                                 </dl>
                             </div>
                         </div>
-                        <div class="carousel__cardV">
+                        <div id="ecran-3" class="carousel__cardV">
                             <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
                             <div class="cardV__titleBox">
                                 <h4 class="cardV__title">Petite boucle de Coly</h4>
@@ -216,10 +222,84 @@
                                 </dl>
                             </div>
                         </div>
-                        <div class="carousel__cardV">
+                        <div id="ecran-4" class="carousel__cardV">
                             <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
                             <div class="cardV__titleBox">
-                            <h4 class="cardV__title">Petite boucle de Coly</h4>
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                                <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div id="ecran-5" class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
+                            </div>
+                            <div class="cardV__LensBox">
+                                <a class="cardV__Lens" href="#">Voir plus</a>
+                            </div>
+                            <div class="cardV__info">
+                                <dl class="cardV__List1">
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__iconeCorrectif"><img src="../public/img/randonee/icone/Pas.svg" alt="Pas"></dt>
+                                        <dd class="CardV__text">4,85km</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/Orloge.svg" alt="Time"></dt>
+                                        <dd class="CardV__text">1h35</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMax.svg" alt="Hauteur max"></dt>
+                                        <dd class="CardV__text">+81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee">
+                                        <dt class="CardV__icone"><img src="../public/img/randonee/icone/HauteurMin.svg" alt="Hauteur min"></dt>
+                                        <dd class="CardV__text">-81m</dd>
+                                    </div>
+                                    <div class="CardV__donnee CardV__donneeCorrectif">
+                                        <dt class="CardV__Facile"></dt>
+                                        <dd class="CardV__text">Facile</dd>
+                                    </div>
+                                </dl>
+                                <dl Class="cardV__List2">
+                                    <dt class="CardV__text">Départ </dt>
+                                    <dd class="CardV__text"> à coly</dd>
+                                </dl>
+                            </div>
+                        </div>
+                        <div id="ecran-6" class="carousel__cardV">
+                            <img class="cardV__image" src="../public/img/randonee/cover/PBdeColy.jpg" alt="paysage">
+                            <div class="cardV__titleBox">
+                                <h4 class="cardV__title">Petite boucle de Coly</h4>
                             </div>
                             <div class="cardV__LensBox">
                                 <a class="cardV__Lens" href="#">Voir plus</a>
@@ -256,8 +336,8 @@
         
                     </div>
                     <div class="proposition__carouselPosition">
-                        <div class="carouselPosition__bar bar__etat1"></div>
-                        <div class="carouselPosition__bar bar__etat2"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
+                        <div class="carouselPosition__bar bar__etat0"></div>
                         <div class="carouselPosition__bar bar__etat0"></div>
                         <div class="carouselPosition__bar bar__etat0"></div>
                         <div class="carouselPosition__bar bar__etat0"></div>
