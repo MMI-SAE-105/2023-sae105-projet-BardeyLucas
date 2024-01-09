@@ -390,3 +390,7 @@ q::before {
 q::after {
     content: '"';
 }
+.noscroll,
+.noscroll body {
+    overflow-y: hidden;
+}

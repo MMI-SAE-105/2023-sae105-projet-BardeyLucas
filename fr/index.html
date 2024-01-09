@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/css/style.css">
     <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body>
+<body x-data="{Menu: 0}" :class="{noscroll:Menu}">
     <header class="header">
         <div class="header__on">
             <div class="header__bar">
@@ -17,11 +17,13 @@
                     </div>
                 </a>
                 <h1 class="header__title">Randoala</h1>
-                <img class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
-                <!-- <img class="header__menu--open" src="/public/img/icones/Menu-Croix.svg"> -->
+                <div @click="Menu =! Menu">
+                <img x-show="Menu == 0" class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
+                <img x-show="Menu == 1" class="header__menu--open" src="/public/img/icones/Menu-Croix.svg" alt="menu icone">
+                </div>
             </div>
         </div>
-        <!-- <nav class="menu__overlay">
+        <nav x-show="Menu == 1" class="menu__overlay">
             <div class="menu__firstCase P1">
                 <a href="rando.html">
                 <p class="menu__texte">Randonnées</p>
@@ -59,7 +61,7 @@
                     </a>
                 </div>
             </div>
-        </nav>  -->
+        </nav>
     </header>
     <main class="accueil">
         <header class="accueil__entete">
