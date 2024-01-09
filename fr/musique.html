@@ -7,7 +7,7 @@
         <link rel="stylesheet" href="../src/css/style.css">
         <script defer src="https://unpkg.com/alpinejs"></script>
 </head>
-<body>
+<body x-data="{Menu: 0}" :class="{noscroll:Menu}">
     <header class="header">
         <div class="header__on">
             <div class="header__bar">
@@ -17,49 +17,54 @@
                     </div>
                 </a>
                 <h1 class="header__title">Randoala</h1>
-                <img class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
-                <!-- <img class="header__menu--open" src="/public/img/icones/Menu-Croix.svg"> -->
+                <div @click="Menu =! Menu">
+                    <img x-show="Menu == 0" class="header__menu" src="/public/img/icones/Menu.svg" alt="menu icone">
+                    <img x-show="Menu == 1" class="header__menu--open" src="/public/img/icones/Menu-Croix.svg"
+                        alt="menu icone">
+                </div>
             </div>
         </div>
-        <!-- <nav class="menu__overlay">
-                    <div class="menu__firstCase P1">
-                        <a href="rando.html">
-                            <p class="menu__texte">Randonnées</p>
-                        </a>
-                        <img class="menu__image" src="/public/img/icones/FlecheBas.svg">
-                    </div>
-                    <div class="menu__firstCase P2">
-                        <p class="menu__texte">Articles</p>
-                        <img class="menu__image" src="/public/img/icones/FlecheHaut.svg">
-                    </div>
-                    <div class="menu__caseOpen">
-                        <div class="menu__secondCase P3">
-                            <a href="replique.html">
-                                <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
-                            </a>
-                        </div>
-                        <div class="menu__secondCase P4">
-                            <a href="film.html">
-                                <p class="menu__texte">Il était une forêt [film]</p>
-                            </a>
-                        </div>
-                        <div class="menu__secondCase P5">
-                            <a href="list-livre.html">
-                                <p class="menu__texte">Il était une forêt [livre]</p>
-                            </a>
-                        </div>
-                        <div class="menu__secondCase P6">
-                            <a href="realisateur.html">
-                                <p class="menu__texte">Luc Jacquet [réalisateur]</p>
-                            </a>
-                        </div>
-                        <div class="menu__secondCase P7">
-                            <a href="musique.html">
-                                <p class="menu__texte">Iris page two [musique]</p>
-                            </a>
-                        </div>
-                    </div>
-                </nav> -->
+        <nav x-show="Menu >= 1" class="menu__overlay" x-data="{SousMenu: 0}">
+            <div class="menu__firstCase P1">
+                <a href="rando.html">
+                    <p class="menu__texte">Randonnées</p>
+                </a>
+            </div>
+            <div class="menu__firstCase P2">
+                <p class="menu__texte">Articles</p>
+                <img @click="SousMenu = 0" x-show="SousMenu == 1" class="menu__image"
+                    src="/public/img/icones/FlecheHaut.svg">
+                <img @click="SousMenu = 1" x-show="SousMenu == 0" class="menu__image"
+                    src="/public/img/icones/FlecheBas.svg">
+            </div>
+            <div class="menu__caseOpen" x-show="SousMenu == 1">
+                <div class="menu__secondCase P3">
+                    <a href="replique.html">
+                        <p class="menu__texte">“Des arbres à pertes de vue” [autre]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P4">
+                    <a href="film.html">
+                        <p class="menu__texte">Il était une forêt [film]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P5">
+                    <a href="list-livre.html">
+                        <p class="menu__texte">Il était une forêt [livre]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P6">
+                    <a href="realisateur.html">
+                        <p class="menu__texte">Luc Jacquet [réalisateur]</p>
+                    </a>
+                </div>
+                <div class="menu__secondCase P7">
+                    <a href="musique.html">
+                        <p class="menu__texte">Iris page two [musique]</p>
+                    </a>
+                </div>
+            </div>
+        </nav>
     </header>
     <main class="article">
         <section class="article__intro">
