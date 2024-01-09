@@ -39,6 +39,7 @@
     font-style: italic;
     text-align: center;
     line-height: 30px;
+    text-decoration: none;
 }
 .cardP__right{
     display: flex;
