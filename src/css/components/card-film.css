@@ -12,6 +12,7 @@
     text-align: center;
     border: solid 1px var(--Vert-AAA);
     border-radius: 5px;
+    justify-content: space-between;
 }
 .cardF__image{
     width: 100%;
@@ -23,9 +24,9 @@
     font-family: Nunito;
     font-weight: regular;
     font-size: 12px;
-    line-height: 20px;
-    margin-bottom: -5px;
+    margin-top: 5px;
     color: var(--Vert-AAA);
+    margin: 2px 5px;
 }
 .cardF__date{
     margin: 0;
