@@ -37,7 +37,7 @@
 /*Menu*/
 .menu__firstCase, .menu__secondCase{
     left: 0;
-    position: absolute;
+    position: fixed;
     height: 100px;
     display: flex;
     justify-content: space-between;
