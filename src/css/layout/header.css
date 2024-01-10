@@ -50,7 +50,11 @@
     margin-left: 20px;
     width: calc(100% - 82px);
     /* width: calc(100% - 42px); */
+    -webkit-animation: 400ms linear forwards move-element;
+    animation: 400ms linear forwards move-element;
 }
+    @-webkit-keyframes move-element { from { margin-top: -150px } to { margin-top: -50px } }
+    @keyframes move-element { from { margin-top: -150px } to { margin-top: -50px } }
 .menu__firstCase>a,
 .menu__secondCase>a{
     text-decoration: none;
