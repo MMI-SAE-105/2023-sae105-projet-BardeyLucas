@@ -30,7 +30,7 @@
 }
 .header__title{
     align-self: center;
-    font-family: Shrikhand;
+    font-family: Shrikhand, arial;
     font-weight: 400;
     font-size: 24px;
 }

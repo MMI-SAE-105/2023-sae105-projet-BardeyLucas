@@ -4,9 +4,9 @@
     justify-items: center;
     justify-content: center;
 } 
-/* .projet__positionement a:nth-child(2n){
+ .projet__positionement a:nth-child(2n){
     flex-direction: row-reverse;
-} */
+} 
 .projet__cardP{
     border-top: solid 1px var(--Vert-AAA);
     padding: 10px 20px;
